@@ -1,0 +1,260 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+		<title>Achieve - Contact | Portfolio Template</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="ZTApps" />
+		<link rel="shortcut icon" href="../img/favicon.png">
+        
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <!-- End Fonts -->
+        
+        <!-- CSS Files -->
+		<link rel="stylesheet" type="text/css" href="{% static 'home/css/bootstrap.min.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'home/css/font-awesome.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/style-green.css' %}" />
+        <!-- <link rel="stylesheet" type="text/css" href="../css/style-green.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="../css/style-purple.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="../css/style-red.css" /> -->
+        
+        <!-- End CSS Files -->
+         
+	</head>
+    
+	<body>
+        
+        <!-- Navigation Section -->
+        <nav class="navbar bg-color-1" role="navigation">
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span> 
+                </button>
+                <a class="navbar-brand" href="../index.html">achieve</a>
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html#services/">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="../portfolio/index.html">PORTFOLIO</a>
+                    </li>
+                    <li class="home">
+                        <a href="../index.html">
+                            <img src="{% static 'home/img/logo-no-text.png' %}" alt="Home" width="128" height="128">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#about">ABOUT</a>
+                    </li>    
+                    <li class="active">
+                        <a href="#">CONTACT</a>
+                    </li> 
+                </ul>
+            </div>
+
+        </nav> 
+        <!-- End Navigation Section -->
+        
+        <!-- Contact Section -->
+        <section id="contact">
+             
+            <div class="container">
+                <div class="row text-center"> 
+                    <div class="col-sm-12"> 
+                        <h1 class="heading-large section-color-1">CONTACT US</h1>
+                    </div>
+                    <div class="col-sm-12"> 
+                        <p class="text-large section-color-1">
+                            If you would like to order a custom package, request a quote on a project or any other queries,<br>
+                            feel free to send us a message either by our contact form or contact details below.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row text-center">
+                
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="form-container">
+                            
+                            <!-- Contact Form -->
+                            <form id="contact_form" action="email.php" method="post" name="contactform">
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input id="name" name="name" type="text" class="form-control" placeholder="Full Name*">
+                                </div> 
+                                <div class="form-group">
+                                    <i class="fa fa-pencil"></i>
+                                    <input id="subject" name="subject" type="text" class="form-control" placeholder="Subject*">
+                                </div> 
+                                <div class="form-group">
+                                    <i>@</i>
+                                    <input id="email" name="email" type="text" class="form-control" placeholder="Email Address*">
+                                </div> 
+                                <div class="form-group">
+                                    <i class="fa fa-envelope"></i>
+                                    <textarea name="message" id="message" class="form-control" rows="7" placeholder="Message*"></textarea>
+                                </div> 
+                                <div class="form-group">
+                                    <button id="send_message" type="submit" class="btn btn-1" value="Submit">Submit Your Message</button>
+                                </div> 
+                            </form>
+                            <!-- End Contact Form -->
+                            
+                            <!-- Success Message -->
+                            <div class="message-sent"> 
+                                <div>
+                                    <h2 class="section-color-1">Message Was Sent Successfully!</h2>
+                                </div>
+                            </div>
+                            <!-- End Success Message -->
+                            
+                        </div>
+                    </div>  
+                    
+                    <div class="clearfix"></div>
+                    
+                    <div class="col-sm-12 section-color-1"> 
+                        
+                        <ul class="contact-details">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <h2> 46 Gray's Inn Rd, London, WC1X 8LP</h2>
+                                <i class="fa fa-map-marker"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <h2>spam@ztapps.com</h2>
+                                <i class="fa fa-envelope-o"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <h2>(123) 456 - 7890</h2>
+                                <i class="fa fa-phone"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-mobile"></i>
+                                <h2>(123) 456 - 7890</h2>
+                                <i class="fa fa-mobile"></i>
+                            </li>
+                        </ul>
+                         
+                    </div> 
+                    
+                </div>
+                
+            </div> 
+        
+        </section>
+        <!-- End Contact Section -->
+        
+        <!-- Footer Section -->
+        <footer>
+            
+            <div class="container text-center">
+                <div class="row">
+                    
+                    <div class="col-sm-12">
+                        <ul class="social list-inline">
+                            <li>
+                                <div>
+                                    <a href="#" class="facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="dribbble">
+                                        <i class="fa fa-dribbble"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="vimeo">
+                                        <i class="fa fa-vimeo-square"></i>
+                                    </a>
+                                </div>
+                            </li> 
+                            <li>
+                                <div>
+                                    <a href="#" class="linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </li> 
+                            <li>
+                                <div>
+                                    <a href="#" class="google-plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </li> 
+                            <li>
+                                <div>
+                                    <a href="#" class="youtube">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                    
+                    <div class="col-sm-12">
+                        <ul class="subnav list-inline">
+                            <li><a href="../index.html#services">Services</a></li>
+                            <li><a href="../portfolio/index.html">Portfolio</a></li>
+                            <li><a href="../index.html#about">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-sm-12"> 
+                        <p>
+                            Achieve made by <a href="http://www.ztapps.com">ZTApps</a>.<br>
+                            Copyright &copy; 2013, All Rights Reserved
+                        </p>
+                    </div>
+                    
+                    <div class="col-sm-12">
+                        <a href="../index.html">
+                            <img src="{% static 'home/img/logo-text-right.png' %}" class="logo" alt="logo">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </footer>
+        <!-- End Footer Section -->
+    
+        <!-- Scripts Section -->
+        <script src="{% static 'home/js/jquery.1.10.1.js' %}"></script>
+        <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'home/js/smoothscroll.js' %}"></script>
+        <script src="{% static 'home/js/validation.js' %}"></script>
+        <!-- Scripts Section -->
+        
+    </body>
+    
+</html> 
